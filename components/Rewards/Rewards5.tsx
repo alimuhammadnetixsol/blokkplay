@@ -40,7 +40,6 @@ const Rewards5 = () => {
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "cover",
                 padding: "28px",
-                // padding: "1px",
                 margin: "20px",
                 marginBottom: "20px",
               }}
