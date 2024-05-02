@@ -1,0 +1,225 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.gradient {
+    background: transparent linear-gradient(89deg, #25DBA8 0%, #161F7E 100%, #25DBA8 100%) 0% 0% no-repeat padding-box;
+    clip-path: polygon(100% 34%, 100% 65%, 0 98%, 0 1%);
+}
+.button {
+    background: transparent linear-gradient(90deg, #6149CD 0%, #32B9DE 57%, #25DBA8 100%) 0% 0% no-repeat padding-box;
+    box-shadow: 4px 23px 57px #6149CD42;
+    border-radius: 22px;
+    opacity: 1;
+}
+
+/* .input:focus { */
+    /* outline : transparent linear-gradient(90deg, #6149CD 0%, #32B9DE 57%, #25DBA8 100%) 0% 0% no-repeat padding-box; */
+    /* outline: 2px solid #32B9DE;
+} */
+
+.button1 {
+    border: 2px solid #25DBA8;
+    border-radius: 12px;
+    opacity: 1;
+}
+.Typewriter {
+  height: 260px;
+}
+.nav_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  max-width: 100vw;
+  position: fixed;
+  left: 0;
+  top: 0;
+  transition: background 0.3s ease !important;
+  opacity: 0.9;
+  padding: 15px;
+  height: 70px;
+  z-index: 10000;
+}
+.nav_logo img {
+  display: block;
+}
+.nav_wrapper .nav_list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.nav_wrapper .nav_list ul {
+  display: flex;
+  gap: 40px;
+}
+.nav_wrapper .nav_list ul .desktop-link,
+.side_bar ul .li {
+  text-decoration: none !important;
+  font-weight: 800;
+  list-style: none;
+  color: white !important;
+  opacity: 1 !important;
+  background: none;
+}
+.nav_wrapper .nav_list button {
+  border: 3px solid rgb(4, 245, 177);
+  text-decoration: none;
+  font-weight: 800;
+  list-style: none;
+  color: white;
+  transition: 0.5s;
+}
+.nav_hamburger {
+  display: none;
+}
+@media screen and (min-width: 1000px) {
+  .side_bar {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .ham {
+    display: flex;
+  }
+  .nav_list ul {
+    display: none !important;
+  }
+  .nav_hamburger {
+    display: unset;
+    color: white;
+    font-size: 30px;
+  }
+  .side_bar {
+    width: 80vw;
+  }
+}
+.side_bar {
+  margin: 0px auto;
+  background: #000;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  z-index: 100 !important;
+  position: absolute;
+  top: 70px;
+  right: 0%;
+  height: calc(100vh - 70px);
+  opacity: 0.9;
+}
+@media screen and (min-width: 1000px) {
+  .ham {
+    display: none;
+  }
+}
+@media screen and (max-width: 400px) {
+  .side_bar {
+    width: 80vw;
+  }
+}
+.b-none {
+  border: none !important;
+  background: none !important;
+}
+.b-none:hover {
+  border: none !important;
+  background: none !important;
+}
+.side_bar ul {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+}
+.side_bar ul .li {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  width: 100%;
+  margin: 20px;
+  color: white !important;
+}
+.side_bar ul button {
+  text-decoration: none !important;
+  color: white !important;
+  text-align: start !important;
+  display: block !important;
+}
+.d-none {
+  display: none;
+}
+.hover_bg_none:hover {
+  background: none !important;
+}
+
+
+.login_button {
+  font-family: var(--e-global-typography-primary-font-family), Sans-serif;
+  font-weight: var(--e-global-typography-primary-font-weight);
+  fill: #ffffff;
+  color: #ffffff;
+  background-color: #02010100;
+  border-style: solid;
+  border-width: 2px 2px 2px 2px;
+  border-color: var(--e-global-color-026f082);
+  border-radius: 12px 12px 12px 12px;
+  padding: 10px 25px 10px 25px;
+}
+
+.login_button:hover {
+  background: #222121 !important;
+  border-color: #222121 !important;
+}
+
+.bg_none {
+  transition: 1s !important;
+  background: none !important;
+}
+.bg_nav {
+  transition: 1s !important;
+  background: hsla(259, 48%, 52%, 1);
+  background: linear-gradient(
+    90deg,
+    hsla(259, 48%, 52%, 1) 2%,
+    hsla(163, 72%, 50%, 1) 100%
+  );
+}
+/* hero */
+.bg_img {
+  background-image: url("../public/navbar-assets/background-hero.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.btn_border {
+  border: 2px solid #25dba8;
+  border-radius: 10px;
+}
+.svg-icon path {
+  transition: fill 0.3s ease;
+  fill: #25dba8;
+}
+
+.button:hover .svg-icon path {
+  transition: fill 0.3s ease;
+  fill: white !important;
+}
+.type-writer-class {
+  background: red;
+  width: 100%;
+}
+
+.button2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 10px;
+}
+.back {
+  background: transparent url('/images/Blokkplay_PLUS.png') 0% 0% no-repeat padding-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.95;
+}
