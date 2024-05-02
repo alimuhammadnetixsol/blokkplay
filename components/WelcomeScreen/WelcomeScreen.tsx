@@ -23,9 +23,9 @@ const WelcomeScreen = () => {
     };
   }, []);
 
-  const smallerScreen = isSmallScreen ? {padding : "2rem 1rem"} : {padding: "1.6rem"} ;
+  const smallerScreen = isSmallScreen ? {padding : "2rem"} : {padding: "2rem"} ;
   const firstStyles = isSmallScreen ? { gridTemplateColumns: "1fr" } : { gridTemplateColumns: "1fr 0.65fr" };
-  const secondStyles = isSmallScreen ? { gridTemplateColumns: "1fr" } : { gridTemplateColumns: "0.56fr 0.93fr 0.47fr" };
+  const secondStyles = isSmallScreen ? { gridTemplateColumns: "1fr" } : { gridTemplateColumns: "0.55fr 1fr 0.45fr" };
 
   return (
     <div
@@ -36,8 +36,10 @@ const WelcomeScreen = () => {
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         display: "grid",
+        justifyContent: "center",
         gridTemplateColumns: "1fr",
-        gap: "20px",
+        gridTemplateRows: "auto",
+        gap: "10px",
         ...smallerScreen,
         boxSizing: "border-box"
       }}
@@ -45,7 +47,6 @@ const WelcomeScreen = () => {
          <div
           style={{
             display: "grid",
-            gridTemplateRows: "auto auto",
             gap: "10px",
             ...firstStyles,
           }}
